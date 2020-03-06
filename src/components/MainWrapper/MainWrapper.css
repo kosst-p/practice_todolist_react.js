@@ -1,0 +1,50 @@
+.main-wrapper {
+  border: 3px solid #cccccc;
+  width: 400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+}
+.section-with-tasks {
+  /* border: 1px solid yellow; */
+}
+.checkboxes-block {
+  /* border: 1px solid black; */
+  padding: 5px;
+}
+.section-add-task {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  /* background-color: #f0f0f0; */
+  align-items: center;
+}
+.title-day {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.dayli-wrapper {
+  margin-bottom: 20px;
+  /* border: 1px solid green; */
+  padding: 5px;
+}
+
+.done-task {
+  text-decoration: line-through;
+  color: rgba(120, 131, 139, 0.357);
+}
+
+.done-task-checkbox {
+  background-color: rgba(120, 131, 139, 0.357);
+}
+.delete-task {
+  display: none;
+}
+.delete-task-on {
+  display: block;
+}

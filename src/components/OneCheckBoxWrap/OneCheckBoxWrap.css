@@ -1,0 +1,103 @@
+.one-checkbox-wrap {
+  /* border: 1px solid purple; */
+  position: relative;
+}
+/* Customize the label (the container) */
+.container-checkbox {
+  text-align: left;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  margin-right: 20px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  /* background-color: #78838b; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.added-task {
+  font-size: 16px;
+}
+
+#mdiv {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgb(120, 131, 139);
+  border: 1px solid black;
+  right: 0;
+  top: 6px;
+}
+#mdiv:hover {
+  cursor: pointer;
+}
+.mdiv {
+  height: 17px;
+  width: 1px;
+  margin-left: 7px;
+  background-color: white;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.md {
+  height: 16px;
+  width: 1px;
+  background-color: white;
+  transform: rotate(90deg);
+  z-index: 2;
+}
